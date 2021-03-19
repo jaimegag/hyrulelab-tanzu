@@ -1,7 +1,7 @@
 ---
 kind: wcpCluster
 metadata:
-  vcenter: pacific-vcsa.haas-2.pez.vmware.com
+  vcenter: pacific-vcsa.haas-415.pez.vmware.com
   datacenter: Pacific-Datacenter                        
   cluster: Workload-Cluster                             
 spec:

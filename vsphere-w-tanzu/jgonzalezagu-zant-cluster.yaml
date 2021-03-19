@@ -5,21 +5,22 @@ metadata:
  namespace: nsdemo2
 spec:
  distribution:
-   fullVersion: null
-   version: v1.18.15
+   fullVersion: ""
+   #version: v1.17.17 # original
+   version: v1.18.15 # to upgrade to
  topology:
    controlPlane:
      count: 1
      class: guaranteed-xsmall
      storageClass: pacific-gold-storage-policy
    workers:
-     count: 2
+     count: 1
      class: guaranteed-xsmall
      storageClass: pacific-gold-storage-policy
  settings:
    network:
      cni:
-       name: calico
+       name: antrea
      services:
        cidrBlocks: ["198.51.100.0/12"] #Cannot overlap with Supervisor Cluster
      pods:
