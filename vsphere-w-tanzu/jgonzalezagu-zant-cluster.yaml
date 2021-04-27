@@ -6,17 +6,17 @@ metadata:
 spec:
  distribution:
    fullVersion: ""
-   #version: v1.17.17 # original
-   version: v1.18.15 # to upgrade to
+   #version: v1.19.7 # to upgrade to
+   version: v1.18.15 # original
  topology:
    controlPlane:
      count: 1
      class: guaranteed-xsmall
-     storageClass: pacific-gold-storage-policy
+     storageClass: tanzu
    workers:
      count: 1
      class: guaranteed-xsmall
-     storageClass: pacific-gold-storage-policy
+     storageClass: tanzu
  settings:
    network:
      cni:
@@ -26,4 +26,4 @@ spec:
      pods:
        cidrBlocks: ["192.0.2.0/16"] #Cannot overlap with Supervisor Cluster
    storage:
-     defaultClass: pacific-gold-storage-policy
+     defaultClass: tanzu

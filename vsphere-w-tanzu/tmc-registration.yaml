@@ -5,4 +5,4 @@ metadata:
   namespace: svc-tmc-c8
 spec:
   operation: INSTALL
-  registrationLink: https://easttanzuseamericas.tmc.cloud.vmware.com/installer?id=98ce0f9eea3d13093f9dec8a329a88ad72955732983f401fb85051890df1de82&source=registration
+  registrationLink: https://easttanzuseamericas.tmc.cloud.vmware.com/installer?id=8f0597c7502a223cb081a4c4e4018667b15d36534279703a3ca9adc75ebc6120&source=registration&type=tkgs

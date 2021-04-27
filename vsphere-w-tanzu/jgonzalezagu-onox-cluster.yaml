@@ -1,21 +1,19 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
- name: jgonzalezagu-ghirahim
+ name: jgonzalezagu-onox
  namespace: nsdemo1
 spec:
  distribution:
-   fullVersion: ""
-   version: v1.19.7 # original
-   #version: v1.20.2 # to upgrade to
+   version: v1.19.7
  topology:
    controlPlane:
      count: 1
-     class: guaranteed-xsmall
+     class: best-effort-xsmall
      storageClass: tanzu
    workers:
      count: 1
-     class: guaranteed-xsmall
+     class: best-effort-xsmall
      storageClass: tanzu
  settings:
    network:
