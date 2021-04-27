@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: nsdemo2
+  namespace: default
 spec:
   selector:
     matchLabels:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: gcr.io/kubernetes-development-244305/nginx:latest
         ports:
         - containerPort: 80
         livenessProbe:
@@ -33,7 +33,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nginx-service
-  namespace: nsdemo2
+  namespace: default
 spec:
   selector:
     app: nginx
